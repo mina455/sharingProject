@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.demo.dao.MemberMapper">
+
+    <sql id="query">
+        SELECT
+            NAME	        AS username,
+            IMG	            AS image
+        FROM DEMO
+    </sql>
+    
+    <select id="list" parameterType="com.example.demo.vo.MemberVo" resultType="com.example.demo.vo.MemberVo">
+        <include refid="query" />
+    </select>
+    
+    <insert id="add" parameterType="com.example.demo.vo.MemberVo">
+        INSERT INTO DEMO (
+            NAME
+            , IMG
+        )
+        VALUES (
+            #{username}
+            , #{image}
+        )
+    </insert>
+
+    <select id="get" parameterType="string" resultType="com.example.demo.vo.MemberVo">
+        <include refid="query" />
+        where name = #{username}
+    </select>
+</mapper>

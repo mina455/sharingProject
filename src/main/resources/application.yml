@@ -1,0 +1,28 @@
+
+
+#### COMMON ####
+
+
+spring:
+  profiles:
+    active: development
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+  http:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  messages:
+    always-use-message-format: false
+    cache-seconds: -1
+    encoding: UTF-8
+    basename: i18n/message, i18n/error
+
+
+
+server:
+  error:
+    whitelabel:
+      enabled: false

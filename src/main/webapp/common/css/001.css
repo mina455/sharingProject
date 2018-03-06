@@ -1,0 +1,21 @@
+body,td,select,input,div,form,textarea,center,option,pre,blockquote{font-family:Tahoma,Verdana,Arial;color:#484848;font-size:9pt;}
+
+body{ 
+scrollbar-face-color: #F7f7f7; 
+scrollbar-shadow-color:#E9E9E7; 
+scrollbar-highlight-color:#FFFFFF;
+scrollbar-3dlight-color: #E4E9EA; 
+scrollbar-darkshadow-color: #777777;
+scrollbar-track-color: #FcFcFc;
+scrollbar-arrow-color: #10173C; } 
+	A:link {color:#484848;}
+	A:visited {color:#484848;}
+	A:active {color:#484848;}
+	A:hover {color:<?=$color_dark?>;}
+.select  { background-color:#ddd6d1; font-size:11px}
+.input  { font-size:11px}
+.num { font-size:11px; color:#666666; }
+.category { color:#7a6049; }
+.hit { font-size:11px; color:#666666; }
+.date { font-size:11px; color:#666666; }
+.comment_cnt { font-size:11px; color:#ff4e00; }
