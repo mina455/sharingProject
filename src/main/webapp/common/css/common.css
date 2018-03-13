@@ -1,0 +1,35 @@
+header {
+	padding:10px dashed;
+}
+
+nav ul {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+ul li {
+	display: inline;
+}
+
+#content {
+	overflow: hidden;
+}
+section {
+	float: center;
+	width: 100%;
+}
+aside {
+	float: right;
+	width: 20%;
+	background: LightGreen;
+}
+
+footer {
+	background-color:#BDBDBD;
+	padding:10px;
+	font-size: small;
+	color: #FFFFFF;
+	text-align: right;
+}

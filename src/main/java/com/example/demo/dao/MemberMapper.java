@@ -8,6 +8,6 @@ public interface MemberMapper {
 
     List<MemberVo> list(MemberVo vo);
     int add(MemberVo vo);
-    MemberVo get(String username);
+    MemberVo get(int seq);
 
 }

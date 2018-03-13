@@ -22,8 +22,8 @@ public class MemberService {
         memberMapper.add(vo);
     }
     
-    public MemberVo get(String username) {
-        return memberMapper.get(username);
+    public MemberVo get(int seq) {
+        return memberMapper.get(seq);
     }
     
 }

@@ -119,9 +119,9 @@ public class MemberController {
     public void thumbnail(
             HttpServletResponse response,
             HttpServletRequest request,
-            @RequestParam(value = "username") String username) throws IOException {
+            @RequestParam(value = "seq") int seq) throws IOException {
 
-        MemberVo atchFileVo = memberService.get(username);
+        MemberVo atchFileVo = memberService.get(seq);
         if (null == atchFileVo) {
             return;
         }

@@ -5,7 +5,8 @@
 
     <sql id="query">
         SELECT
-            NAME	        AS username,
+            SEQ             AS seq,
+            USERNAME	    AS username,
             IMG	            AS image
         FROM DEMO
     </sql>
@@ -16,7 +17,7 @@
     
     <insert id="add" parameterType="com.example.demo.vo.MemberVo">
         INSERT INTO DEMO (
-            NAME
+            USERNAME
             , IMG
         )
         VALUES (
@@ -25,8 +26,8 @@
         )
     </insert>
 
-    <select id="get" parameterType="string" resultType="com.example.demo.vo.MemberVo">
+    <select id="get" parameterType="int" resultType="com.example.demo.vo.MemberVo">
         <include refid="query" />
-        where name = #{username}
+        where seq = #{seq}
     </select>
 </mapper>

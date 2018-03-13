@@ -2,9 +2,17 @@ package com.example.demo.vo;
 
 public class MemberVo {
 
+    private int seq;
     private String username;
     private String image;
-
+    
+    
+    public int getSeq() {
+        return seq;
+    }
+    public void setSeq(int seq) {
+        this.seq = seq;
+    }
     public String getUsername() {
         return username;
     }
@@ -19,6 +27,6 @@ public class MemberVo {
     }
     @Override
     public String toString() {
-        return "MemberVo [username=" + username + ", image=" + image + "]";
+        return "MemberVo [seq=" + seq + ", username=" + username + ", image=" + image + "]";
     }
 }
